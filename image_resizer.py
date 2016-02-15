@@ -8,9 +8,9 @@ import time
 
 def time_test_jpeg():
     """ this is time_tests """
-    DIMENSION = 300
+    DIMENSION = 140
     #_obj = 'images_1400_3.jpg'
-    obj = 'images_1400_4.png'
+    obj = 'images_1400_3.jpg'
     in_file = open(obj,"rb")
     ori_request_body = in_file.read()
     request_body = ori_request_body
@@ -55,9 +55,9 @@ def time_test_jpeg():
 
 def time_test_pjpeg():
     """ this is time_tests """
-    DIMENSION = 300
+    DIMENSION = 140
     #_obj = 'images_1400_3.jpg'
-    obj = 'images_1400_4.png'
+    obj = 'images_1400_3.jpg'
     in_file = open(obj,"rb")
     ori_request_body = in_file.read()
     request_body = ori_request_body
@@ -103,8 +103,8 @@ def time_test_pjpeg():
 
 if __name__ == '__main__':
     import timeit
-    print(timeit.timeit("time_test_jpeg()", setup="from __main__ import time_test_jpeg", number = 1000))
-    print(timeit.timeit("time_test_pjpeg()", setup="from __main__ import time_test_pjpeg", number = 1000))
+    print(timeit.timeit("time_test_jpeg()", setup="from __main__ import time_test_jpeg", number = 1))
+    print(timeit.timeit("time_test_pjpeg()", setup="from __main__ import time_test_pjpeg", number = 1))
 
     #time_test()
     #print 'finish time_test'
